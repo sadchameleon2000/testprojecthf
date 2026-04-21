@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Loading study...</title>
+
+  <script>
+    // Your experimental conditions
+    const conditionA = "https://docs.google.com/forms/d/e/1FAIpQLSe5DIHJLwzRUBKCAO5dHz1R-Xym18GNIylJHM5yBXogtjp9mw/viewform?usp=pp_url&entry.747464398=A";
+    const conditionB = "https://docs.google.com/forms/d/e/1FAIpQLSdezktkbWtZyQvnaLrFuI3lZ4xDH0_W3bGdZJS4S-EqGbt1NQ/viewform?usp=pp_url&entry.2065037938=B";
+
+    // True random assignment
+    const rand = Math.random();
+
+    if (rand < 0.5) {
+      window.location.replace(conditionA);
+    } else {
+      window.location.replace(conditionB);
+    }
+  </script>
+</head>
+
+<body>
+  <p>Loading survey...</p>
+</body>
+</html>
