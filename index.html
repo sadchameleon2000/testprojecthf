@@ -5,17 +5,16 @@
   <title>Loading study...</title>
 
   <script>
-    // Your experimental conditions
-    const conditionA = "https://docs.google.com/forms/d/e/1FAIpQLSe5DIHJLwzRUBKCAO5dHz1R-Xym18GNIylJHM5yBXogtjp9mw/viewform?usp=pp_url&entry.747464398=A";
-    const conditionB = "https://docs.google.com/forms/d/e/1FAIpQLSdezktkbWtZyQvnaLrFuI3lZ4xDH0_W3bGdZJS4S-EqGbt1NQ/viewform?usp=pp_url&entry.2065037938=B";
+    const formA = "https://docs.google.com/forms/d/e/1FAIpQLSe5DIHJLwzRUBKCAO5dHz1R-Xym18GNIylJHM5yBXogtjp9mw/viewform";
+    const formB = "https://docs.google.com/forms/d/e/1FAIpQLSdezktkbWtZyQvnaLrFuI3lZ4xDH0_W3bGdZJS4S-EqGbt1NQ/viewform";
 
-    // True random assignment
+    // Random assignment
     const rand = Math.random();
 
     if (rand < 0.5) {
-      window.location.replace(conditionA);
+      window.location.href = formA;
     } else {
-      window.location.replace(conditionB);
+      window.location.href = formB;
     }
   </script>
 </head>
